@@ -6,7 +6,7 @@ Main selling point of this setup is that DNS zone management happens automatical
 new DNS infrastructure feature called 'Catalog Zones'.
 
 High level overview:
-
+```
             ┌─────────────┐      ┌────────────────┐        ┌───────────────────┐
             │ PostgreSQL  │      │ PowerDNS 4.4.x │        │PowerDNS-Admin     │
             │ DB backend  ├──────┤ zone catalog   │        │DNS administration │
@@ -19,8 +19,7 @@ High level overview:
                                          │
                                          │
                       Firewall           │
-─────────────────────────────────────────┼──────────────────────────────────────
-                                         │
+   ──────────────────────────────────────┼───────────────────────────────────── 
                                          │
                            AXFR-TSIG     │     AXFR-TSIG
          ┌───────────────────────────────┼─────────────────────────────┐
@@ -38,6 +37,6 @@ High level overview:
  │ ns1.example   │               │ ns2.example    │           │ ns3.example   │
  │               │               │                │           │               │
  └───────────────┘               └────────────────┘           └───────────────┘
- 
+``` 
  
  
